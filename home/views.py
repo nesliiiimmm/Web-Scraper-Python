@@ -9,8 +9,8 @@ from home.Control import Control
 from fuzzywuzzy import fuzz
 
 
-my_api_key = "AIzaSyC89O-yDadEzHUn6SllJkTd1dadyQnXQO0"
-my_cse_id = "015054545797869500988:vly5-lebkde"
+my_api_key = ""#This part google api key
+my_cse_id = ""# This part cse id
 
 
 # Create your views here.
