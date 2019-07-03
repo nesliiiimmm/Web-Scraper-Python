@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WEB CRAWLER / SCRAPING</title>
+</head>
+<body>
+
+
+<!-- Load icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- The form -->
+<div style="height: 200px; width:100%; ">
+        <center><h2 class="web"> WEB CRAWLER / SCRAPING</h2></center>
+        <form class="example" action="/search/" method="get">
+          <input type="text" placeholder="Search.." name="search" required="required">
+          <button type="submit"><span>Search</span></button>
+        </form>
+</div>
+<br><br><br><br><br><br>
+
+        <center><h2>{{exchange.Amount}} {{exchange.From}}</h2> <h2>{{exchange.Result}} {{exchange.To}}</h2></center>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+.web{
+    font-size:50px;
+    background:linear-gradient(
+    to right, #12c2e9,
+    #c471ed, #f64f59,
+    #c471ed, #12c2e9);
+    filter:contrast(150%);
+    transition:0.3s;
+    font-family: "Times New Roman", Times, serif;
+}
+/* Style the search field */
+form.example input[type=text] {
+  margin-left:250px;
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 50%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+     background-color: transparent;
+     font size : 2rem;
+     text-transform: uppercase;
+     padding: 0.5rem 5rem;
+     overflow:hidden;
+     position:relative;
+     color: white;
+     cursor:pointer;
+     font-weight:500;
+     float: left;
+     width: 10%;
+     padding: 10px;
+     font-size: 17px;
+     border: 1px solid grey;
+}
+
+form.example button:hover:before {
+    margin-left:0;
+}
+
+form.example button span{
+    position:relative;
+    z-index: 1;
+    color:black;
+    font-style:bold;
+}
+
+
+form.example button:before{
+    content:'';
+    height:100%;
+    width:200%;
+    margin-left: -100%;
+    position:absolute;
+    top:0; left:0; right:0; bottom:0;
+    background:linear-gradient(
+    to right, #12c2e9,
+    #c471ed, #f64f59,
+    #c471ed, #12c2e9);
+    filter:contrast(150%);
+    transition:0.3s;
+}
+
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</body>
+</html>

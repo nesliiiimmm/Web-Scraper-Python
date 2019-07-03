@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+</head>
+<body>
+    {% for src in search %}
+        <h3>{{src.name}}</h3>
+        <h4>{{src.price}}</h4>
+        <a href="{{src.link}}" target="_blank">{{src.link}}</a><br><hr>
+    {% endfor %}
+
+</body>
+</html>
